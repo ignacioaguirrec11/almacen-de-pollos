@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Almacén de Pollos | Promos y catálogo</title>
+<meta name="description" content="Pollo fresco, milanesas, empanadas y congelados. Promos desde $14.500. Av. Solano Vera 390. Hacemos envíos, pedí por WhatsApp.">
+<meta name="theme-color" content="#2b1710">
+<meta property="og:title" content="Almacén de Pollos | Promos de la semana">
+<meta property="og:description" content="Pollo fresco, milanesas, empanadas y más. Promos desde $14.500. Hacemos envíos 🛵 Pedí por WhatsApp.">
+<meta property="og:image" content="https://almacen-de-pollos.vercel.app/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://almacen-de-pollos.vercel.app/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/img/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="preload" as="image" href="img/hero.webp">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="Almacén de Pollos, inicio">
+      <span class="brand-mark" aria-hidden="true"><i class="ph-fill ph-bird"></i></span>
+      <span class="brand-name">Almacén<br><b>de Pollos</b></span>
+    </a>
+    <nav class="nav-links" aria-label="Secciones">
+      <a href="#catalogo">Promos</a>
+      <a href="#como-pedir">Cómo pedir</a>
+      <a href="#local">Dónde estamos</a>
+    </nav>
+    <button class="cart-btn" data-cart aria-label="Ver mi pedido"><i class="ph ph-shopping-bag"></i><span class="cart-btn-label">Mi pedido</span><span id="cartCount" class="count" hidden>0</span></button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <img class="hero-bg" src="img/hero.webp" alt="" width="900" height="1200">
+    <div class="wrap hero-in">
+      <p class="hero-tag reveal"><i class="ph-fill ph-moped"></i> Hacemos envíos</p>
+      <h1 class="reveal" style="--i:1">Pollo fresco y mucho más, <em>a precio de promo.</em></h1>
+      <p class="hero-sub reveal" style="--i:2">Supremas, filet, pata muslo, milanesas, empanadas listas para hornear y congelados. Armá tu pedido acá y mandalo por WhatsApp.</p>
+      <div class="hero-cta reveal" style="--i:3">
+        <a class="btn btn-yellow" href="#catalogo">Ver las promos <i class="ph ph-arrow-down"></i></a>
+        <a class="btn btn-glass" data-wa target="_blank" rel="noopener"><i class="ph ph-whatsapp-logo"></i> 381 626-7224</a>
+      </div>
+      <ul class="hero-facts reveal" style="--i:4">
+        <li><strong>8</strong> promos</li>
+        <li><strong>$14.500</strong> desde</li>
+        <li><strong>Av. Solano Vera 390</strong></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="catalogo" class="catalog">
+    <div class="filters-bar">
+      <div class="wrap">
+        <div id="filters" class="filters" role="toolbar" aria-label="Filtrar productos"></div>
+      </div>
+    </div>
+    <div id="sections" class="wrap"></div>
+  </section>
+
+  <section id="como-pedir" class="how wrap">
+    <h2 class="sec-title reveal">Cómo pedir</h2>
+    <ol class="how-list">
+      <li class="reveal" style="--i:1"><span class="how-n">1</span><h3>Elegí</h3><p>Tocá <b>Agregar</b> en las promos y productos que quieras. Podés cambiar cantidades.</p></li>
+      <li class="reveal" style="--i:2"><span class="how-n">2</span><h3>Mandá el pedido</h3><p>Abrí <b>Mi pedido</b>, elegí envío o retiro y se arma el mensaje solo en WhatsApp.</p></li>
+      <li class="reveal" style="--i:3"><span class="how-n">3</span><h3>Recibí</h3><p>Te confirmamos el total y el horario. Te lo llevamos o lo pasás a buscar.</p></li>
+    </ol>
+  </section>
+
+  <section id="local" class="wrap">
+    <div class="visit reveal">
+      <div class="visit-copy">
+        <p class="eyebrow">Dónde estamos</p>
+        <h2>Av. Solano Vera 390</h2>
+        <p>Pasá por el local o pedí con envío a domicilio. Escribinos por WhatsApp y coordinamos.</p>
+        <div class="visit-cta">
+          <a class="btn btn-wa" data-wa target="_blank" rel="noopener"><i class="ph ph-whatsapp-logo"></i> Escribir por WhatsApp</a>
+          <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&query=Av.+Solano+Vera+390,+Yerba+Buena,+Tucum%C3%A1n" target="_blank" rel="noopener"><i class="ph ph-map-pin"></i> Cómo llegar</a>
+        </div>
+      </div>
+      <div class="visit-art" aria-hidden="true">
+        <img src="img/empanadas.webp" alt="" loading="lazy">
+        <img src="img/supremas.webp" alt="" loading="lazy">
+        <img src="img/caritas.webp" alt="" loading="lazy">
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot wrap">
+  <span class="foot-brand"><i class="ph-fill ph-bird"></i> Almacén de Pollos</span>
+  <span>Av. Solano Vera 390</span>
+  <span>WhatsApp 381 626-7224</span>
+  <span class="foot-note">Precios sujetos a cambio. Fotos ilustrativas.</span>
+</footer>
+
+<button class="fab" data-cart aria-label="Ver mi pedido"><i class="ph ph-shopping-bag"></i> <span id="fabText">Ver mi pedido</span></button>
+<a class="wa-fab" data-wa target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp"><i class="ph ph-whatsapp-logo"></i></a>
+
+<dialog id="detail" class="dlg dlg-detail" aria-labelledby="detailTitle">
+  <button class="icon-btn dlg-close" aria-label="Cerrar"><i class="ph ph-x"></i></button>
+  <div id="detailBody"></div>
+</dialog>
+
+<dialog id="cart" class="dlg dlg-cart" aria-labelledby="cartTitle">
+  <div class="cart-head">
+    <h2 id="cartTitle">Mi pedido</h2>
+    <button class="icon-btn dlg-close" aria-label="Cerrar"><i class="ph ph-x"></i></button>
+  </div>
+  <div id="cartList" class="cart-list"></div>
+  <form id="cartFoot" class="cart-foot" hidden>
+    <fieldset class="seg">
+      <legend class="sr-only">Entrega</legend>
+      <label><input type="radio" name="entrega" value="envio" checked><span><i class="ph ph-moped"></i> Envío</span></label>
+      <label><input type="radio" name="entrega" value="retiro"><span><i class="ph ph-storefront"></i> Retiro en el local</span></label>
+    </fieldset>
+    <label class="field" id="addrField"><span>Dirección de entrega</span><input name="direccion" autocomplete="street-address" placeholder="Calle, número y barrio"></label>
+    <label class="field"><span>Tu nombre <em>(opcional)</em></span><input name="nombre" autocomplete="name" placeholder="Para saber quién pide"></label>
+    <div class="cart-total"><span>Total estimado</span><strong id="cartTotal"></strong></div>
+    <p id="cartTotalNote" class="cart-hint" hidden></p>
+    <a id="cartSend" class="btn btn-wa wide" target="_blank" rel="noopener"><i class="ph ph-whatsapp-logo"></i> Enviar pedido por WhatsApp</a>
+    <p class="cart-hint">Se abre WhatsApp con el pedido armado. El envío se coordina por ahí.</p>
+  </form>
+</dialog>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
